@@ -10,4 +10,14 @@ Skills used with agents, by Emmanuel Paraskakis.
 
 For a complete working example (inputs and outputs), see [`paraskakis/apidesign/conference`](https://github.com/paraskakis/apidesign/tree/main/conference).
 
+### Optional dependencies
+
+For the full experience (automated linting + local preview):
+
+- **RateMyOpenAPI API key** (free) — [api.ratemyopenapi.com/docs](https://api.ratemyopenapi.com/docs). Set as `RMOA_API_KEY` env var.
+- **Node.js** — for Swagger UI preview via `npx http-server`.
+- **curl + python3** — for the RMOA API call (usually pre-installed).
+
+Without these, the skills still generate a complete OpenAPI spec.
+
 See the `api/` folder.

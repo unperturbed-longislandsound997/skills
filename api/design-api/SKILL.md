@@ -13,6 +13,16 @@ All four foundation files (requirements, domain, standards, OpenAPI best practic
 
 Use when the user says `/design-api` or asks to design an API from requirements or stories.
 
+## Optional Dependencies
+
+The core skill (stories + spec generation) works with no extra tools. For the full experience:
+
+- **RateMyOpenAPI API key** — enables automated linting and scoring. Free signup at [api.ratemyopenapi.com/docs](https://api.ratemyopenapi.com/docs). Set as `RMOA_API_KEY` env var.
+- **Node.js** — enables local Swagger UI preview via `npx http-server`.
+- **curl + python3** — used for the RMOA API call. Almost always pre-installed.
+
+Without these, the skill still generates a complete OpenAPI spec — it just skips linting and local preview.
+
 ## Inputs
 
 The user must provide (or point to) these files. Files can be named anything — identify each file by its `# Title` heading or content, not by filename.

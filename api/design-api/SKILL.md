@@ -280,7 +280,7 @@ Show the user:
 
 Then ask: **"Want to preview this in Swagger UI?"**
 
-Requires Node.js (for `npx http-server`) and internet access (Swagger UI loads from unpkg.com CDN). If Node is not installed, tell the user: "Swagger UI preview requires Node.js. You can still open the spec in any OpenAPI viewer — try pasting it at editor.swagger.io." Then skip the preview.
+Requires Node.js (for `npx http-server`) and internet access (Swagger UI loads from unpkg.com CDN). If Node is not installed, tell the user: "Swagger UI preview requires Node.js. You can paste the spec into https://editor.swagger.io to preview it there instead." Then skip the preview.
 
 If yes and Node is available, create a `swagger-preview.html` file in the same directory as the spec:
 

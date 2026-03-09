@@ -21,6 +21,15 @@ The user must provide three files (or paste their content). Files can be named a
 
 If any file is missing, ask the user to provide it before proceeding.
 
+### Working Example
+
+A complete set of input files and output is available at [`paraskakis/apidesign/conference`](https://github.com/paraskakis/apidesign/tree/main/conference):
+
+- `conference-research.md` — Requirements (heading: `# Conference API Market Research`)
+- `conference-domain.md` — Domain (heading: `# Conference Domain`)
+- `API-standards.md` — Standards (heading: `# API Standards`)
+- `conference-api-stories.md` — Stories output from this skill
+
 ### Fetching Files from GitHub
 
 If the user provides a GitHub URL, fetch files using the raw content URL — no authentication required for public repos:

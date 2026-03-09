@@ -188,7 +188,7 @@ Save as JSON to a location the user specifies, or ask where they'd like it saved
 
 ## Step 9: Lint with RateMyOpenAPI (optional)
 
-This step requires an API key from [RateMyOpenAPI](https://ratemyopenapi.com). Sign up for a free account, then find your API key in your dashboard. Set it as the environment variable `RMOA_API_KEY`.
+This step requires an API key from [RateMyOpenAPI](https://ratemyopenapi.com). Sign up for a free account at [api.ratemyopenapi.com/docs](https://api.ratemyopenapi.com/docs) — your API key appears in the Authentication section once logged in. Set it as the environment variable `RMOA_API_KEY` (or any name you prefer — just update the curl command below to match).
 
 **If `RMOA_API_KEY` is not set**, try sourcing the user's shell profile first (`source ~/.zshrc`, `source ~/.bashrc`, or equivalent) — the key may be defined there but not yet loaded in the current session. If still not set, tell the user: "No RMOA API key found. Skipping automated linting. You can get a free key at ratemyopenapi.com and set `RMOA_API_KEY` to enable it." Then skip to Step 10.
 

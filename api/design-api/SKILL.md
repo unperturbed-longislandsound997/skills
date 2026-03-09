@@ -190,7 +190,7 @@ Save as JSON to a location the user specifies, or ask where they'd like it saved
 
 This step requires an API key from [RateMyOpenAPI](https://ratemyopenapi.com). Sign up for a free account, then find your API key in your dashboard. Set it as the environment variable `RMOA_API_KEY`.
 
-**If `RMOA_API_KEY` is not set**, tell the user: "No RMOA API key found. Skipping automated linting. You can get a free key at ratemyopenapi.com and set `RMOA_API_KEY` to enable it." Then skip to Step 10.
+**If `RMOA_API_KEY` is not set**, try sourcing the user's shell profile first (`source ~/.zshrc`, `source ~/.bashrc`, or equivalent) — the key may be defined there but not yet loaded in the current session. If still not set, tell the user: "No RMOA API key found. Skipping automated linting. You can get a free key at ratemyopenapi.com and set `RMOA_API_KEY` to enable it." Then skip to Step 10.
 
 **If `RMOA_API_KEY` is set**, upload the spec and get scores + full issue list:
 
@@ -239,6 +239,14 @@ Scores four categories (0-100 each):
 3. **Re-run after fixes.** Keep iterating until either:
    - Score is 100/100, or
    - Remaining issues are intentional design choices the user has approved ignoring
+
+### Common Gotchas
+
+- **No-auth APIs score ~65 on Security.** RMOA flags 8+ warnings about missing 401/403. If the API intentionally has no auth, these are expected — confirm with the user and move on.
+- **`nullable` keyword.** OpenAPI 3.1.0 dropped `nullable`. Use `"type": ["string", "null"]` instead. RMOA will flag this.
+- **Missing descriptions/examples.** The most common deductions. Every operation, parameter, schema property, and response needs both. Don't skip headers either.
+- **Orphaned components.** RMOA flags schemas defined in `components` but never `$ref`'d. Remove them or wire them up.
+- **Inline schemas.** Any schema defined directly in a path (not via `$ref`) hurts the SDK Generation score. Extract to `components/schemas`.
 
 ## Step 10: Report
 

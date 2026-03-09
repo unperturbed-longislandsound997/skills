@@ -22,6 +22,16 @@ The user must provide (or point to) these files. Files can be named anything —
 
 If any file is missing, ask the user to provide it before proceeding.
 
+### Working Example
+
+A complete set of input files and output is available at [`paraskakis/apidesign/conference`](https://github.com/paraskakis/apidesign/tree/main/conference):
+
+- `conference-api-stories.md` — Stories (heading: `# Conference Schedule API: User Stories`)
+- `conference-domain.md` — Domain (heading: `# Conference Domain`)
+- `API-standards.md` — Standards (heading: `# API Standards`)
+- `OpenAPI-best-practices.md` — Best practices (heading: `# OpenAPI Best Practices for LLMs`)
+- `conference-schedule-api-example.json` — Spec output from this skill
+
 ## Step 1: Read All Inputs
 
 Read all four files completely. Build a mental model of:

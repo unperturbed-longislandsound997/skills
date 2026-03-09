@@ -36,13 +36,13 @@ Read all four files completely. Build a mental model of:
 
 ## Step 2: Generate the OpenAPI Document
 
-Output a single valid JSON file conforming to OpenAPI 3.1.0.
+Output a single valid JSON file. Default to OpenAPI 3.1.0 unless the user specifies a different version.
 
 ### Structure
 
 Follow this order in the document:
 
-1. `openapi` — Always "3.1.0"
+1. `openapi` — "3.1.0" (or the user-specified version)
 2. `info` — Title, description, version, contact, license (per best practices)
 3. `servers` — At least one server with description
 4. `security` — Global security scheme if standards require auth

@@ -23,12 +23,7 @@ If any file is missing, ask the user to provide it before proceeding.
 
 ### Working Example
 
-A complete set of input files and output is available at [`paraskakis/apidesign/conference`](https://github.com/paraskakis/apidesign/tree/main/conference):
-
-- `conference-research.md` — Requirements (heading: `# Conference API Market Research`)
-- `conference-domain.md` — Domain (heading: `# Conference Domain`)
-- `API-standards.md` — Standards (heading: `# API Standards`)
-- `conference-api-stories.md` — Stories output from this skill
+A complete set of inputs and output: [`paraskakis/apidesign/conference`](https://github.com/paraskakis/apidesign/tree/main/conference) — requirements, domain, standards, and the stories this skill produced.
 
 ### Fetching Files from GitHub
 

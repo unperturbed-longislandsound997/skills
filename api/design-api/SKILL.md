@@ -310,7 +310,7 @@ If yes and Node is available, create a `swagger-preview.html` file in the same d
 Then serve it locally and open in the browser:
 
 ```bash
-cd [spec-directory] && npx -y http-server -p 8090 -c-1 &
+cd [spec-directory] && npx -y http-server . -p 8090 -c-1 &
 sleep 2 && open http://localhost:8090/swagger-preview.html
 ```
 

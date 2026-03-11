@@ -1,7 +1,7 @@
 # API Design Skills — Future Improvements
 
 ## Examples
-- [ ] Bring example files into this repo (currently in `paraskakis/apidesign/conference`) — same repo is better for portability
+- [ ] Consider more extensive standards file
 
 ## Additional Linters / Scanners
 - [ ] Jentic scanner

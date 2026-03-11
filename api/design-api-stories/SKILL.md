@@ -23,17 +23,10 @@ If any file is missing, ask the user to provide it before proceeding.
 
 ### Working Example
 
-A complete set of inputs and output: [`paraskakis/apidesign/conference`](https://github.com/paraskakis/apidesign/tree/main/conference) — requirements, domain, standards, and the stories this skill produced.
-
-### Fetching Files from GitHub
-
-If the user provides a GitHub URL, fetch files using the raw content URL — no authentication required for public repos:
-
-```
-https://raw.githubusercontent.com/[owner]/[repo]/[branch]/[path/to/file]
-```
-
-Convert any `github.com/[owner]/[repo]/blob/[branch]/[path]` or `github.com/[owner]/[repo]/tree/[branch]/[path]` URL to this format. If the directory listing is needed first, use WebFetch on the `github.com` URL to find the file names, then fetch each file via the raw URL. Only fall back to the `gh` CLI if WebFetch fails.
+See `references/examples/` for a complete set of inputs (conference scheduling API):
+- `conference-research.md` — requirements
+- `conference-domain.md` — domain model
+- `API-standards.md` — API standards
 
 ## Step 1: Read All Inputs
 

@@ -34,7 +34,11 @@ If any file is missing, ask the user to provide it before proceeding.
 
 ### Working Example
 
-A complete set of inputs and output: [`paraskakis/apidesign/conference`](https://github.com/paraskakis/apidesign/tree/main/conference) — stories, domain, standards, OpenAPI best practices, and the JSON spec this skill produced.
+See `references/examples/` for a complete set of inputs (conference scheduling API):
+- `conference-api-stories.md` — stories (output from `/design-api-stories`)
+- `conference-domain.md` — domain model
+- `API-standards.md` — API standards
+- `OpenAPI-best-practices.md` — OpenAPI best practices
 
 ## Step 1: Read All Inputs
 

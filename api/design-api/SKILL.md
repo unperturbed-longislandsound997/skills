@@ -36,21 +36,15 @@ The user must provide (or point to) these files. Files can be named anything —
 **Optional (determines entry point):**
 5. **Stories** — API user stories with methods, resources, parameters. The human's design decisions — resource nesting, endpoint grouping, parameter choices. Look for a heading like `# Stories`, `# User Stories`, or similar. If provided → skip to Phase 2 (spec). If not → Phase 1 generates them for review.
 
-If any required file is missing, ask the user to provide it before proceeding.
+If any required file is missing, ask the user to provide it before proceeding. If the user doesn't have their own files yet, offer to use the bundled examples in `references/examples/` (a conference scheduling API) so they can try the skill end-to-end.
 
-### Working Example
+### Bundled Examples
 
-A complete set of inputs and outputs: [`paraskakis/apidesign/conference`](https://github.com/paraskakis/apidesign/tree/main/conference) — requirements, domain, standards, OpenAPI best practices, stories, and the JSON spec.
-
-### Fetching Files from GitHub
-
-If the user provides a GitHub URL, fetch files using the raw content URL — no authentication required for public repos:
-
-```
-https://raw.githubusercontent.com/[owner]/[repo]/[branch]/[path/to/file]
-```
-
-Convert any `github.com/[owner]/[repo]/blob/[branch]/[path]` or `github.com/[owner]/[repo]/tree/[branch]/[path]` URL to this format. If the directory listing is needed first, use WebFetch on the `github.com` URL to find the file names, then fetch each file via the raw URL. Only fall back to the `gh` CLI if WebFetch fails.
+A complete set of example inputs is included in `references/examples/`:
+- `conference-research.md` — requirements
+- `conference-domain.md` — domain model
+- `API-standards.md` — API standards
+- `OpenAPI-best-practices.md` — OpenAPI best practices
 
 ---
 

